@@ -61,6 +61,7 @@ body{
 }
 .box2img, .box4img{
     float:right;
+    color: aqua;
 }
 
 .pos{
