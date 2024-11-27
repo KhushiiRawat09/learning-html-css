@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .rotate{
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <!----------------Heading--------------->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <hr>
+
+    <!--------------Entities---------------->
+    <p>Hello, How are you? &lt;h1&gt;</p>
+    <hr>
+
+    <!----------------Bold, Italic, Small----------->
+    <p><b>Lorem ipsum dolor sit amet consectetur</b><i>adipisicing elit. Ad earum nisi odio neque</i> <small>amet iure beatae quod sapiente voluptatibus? Enim?</small></p>
+     <hr>
+
+     <!-------------------Lists----------------->
+     <h2>Shopping List</h2>
+     <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Coffee</li>
+        <li>Biscuit</li>
+     </ul>
+     <hr>
+
+     <!---------------Anchor Tag----------------->
+     <a href="https://www.google.com" target="_blank">Google</a>
+     <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><h3>Google 2</h3></a>
+     <hr>
+
+     <!---------------Image Tag----------------->
+      <img src="img/img.jpg" alt="image" height="250" class="rotate"> 
+      <hr>
+
+      <!-------------iframe Tag--------------->
+      <iframe width="250" src="https://www.youtube.com/embed/pApyQSxCNsA?si=V-PztF4W5il2i7TE" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+      <hr>
+
+      <!-------------Table--------------->
+      <table border="1">
+        <thead>
+            <tr>
+                <th>States</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Uttarakhand</td>
+                <td>Khushi</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Delhi</td>
+                <td>Riya</td>
+                <td>78</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th>163</th>
+            </tr>
+        </tfoot>
+      </table>  
+      <hr>
+
+      <!-----------------Forms-------------->
+      <form class="payment">
+        <h1>PAYMENT FORM</h1>
+        <hr>
+
+        <h2>User Information</h2>
+        <h5>Required Fields are followed by *</h5>
+        <p>Name*: <input type="text" name="name" required></p>
+        <p>Gender: 
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+        </p>
+        <p>Email*: <input type="email" name="email" id="email" required></p>
+        <p>Date: <input type="date" name="date" id="date"></p>
+        <p>City: 
+            <select name="City" id="City">
+                <option value="">Select the city</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="London">London</option>
+                <option value="Newyork">NewYork</option>
+            </select>
+        </p>
+        <hr>
+
+        <h2>Payment Information</h2>
+        <p>Card Type:
+            <select name="card_type" id="card_type" required>
+              <option value="">Select Card Type</option>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">Master Card</option>
+              <option value="Rupay">Rupay</option>  
+            </select>
+        </p>
+        <p>Pincode: <input type="number" name="pincode" placeholder="123456"></p>
+        <p>Card Number: <input type="number" name="cardnumber" placeholder="1111-2222-3333-4444"></p>
+        </p>
+        <p>CVV: <input type="number" name="CVV" placeholder="123"></p>
+        <input type="submit" value="PayNow">
+      </form>
+      <hr>
+</body>
+</html>

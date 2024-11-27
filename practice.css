@@ -1,0 +1,131 @@
+body{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+}
+#img{ 
+    float: left;
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgb(19, 19, 19);
+    padding: 1em;
+}
+.special{
+    background-color: aquamarine;
+    padding: 15px;
+    color: black;
+}
+
+.box-set,.box{
+    border-radius: 6px;
+}
+.box{
+    background: rgb(51, 126, 51);
+    height: 80px;
+    width: 80px;
+    text-align:center;
+    margin: 20px;
+}
+.box1{
+    position: fixed;
+    left: 20px;
+}
+.box2{
+    position: sticky;
+    top: 20px;
+}
+.box3{
+    position: relative;
+    top: 20px;
+}
+.box4{
+    position: absolute;
+    right: 20px;
+}
+
+.boxx{
+    background-color: rgb(71, 147, 121);
+    height:100px;
+    margin: 10px;
+    line-height: 2em;
+}
+.img{
+    width: 50px;
+    height: 60px;
+    float: left;
+    margin: 25px 10px;
+}
+.box2img, .box4img{
+    float:right;
+}
+
+.pos{
+    background-color: rgb(194, 194, 234);
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    top: 0;  
+}
+
+.pos a{
+    padding: 12px;
+    width: 25%;
+    font-size: large;
+    color:rgb(28, 16, 75);
+    text-decoration: none;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start; /*No Spacing*/
+}
+
+.flex-item{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(58, 8, 8);
+    border: 2px solid rgb(96, 64, 23);
+    text-align: center;
+    font-size: 2em;
+    color: rgb(141, 51, 9);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#flexitem1{
+    background-color: rgb(111, 195, 255);
+}
+#flexitem2{
+    background-color: rgb(243, 223, 125);
+    flex-grow: 3;
+}
+#flexitem3{
+    background-color: rgb(198, 232, 119);
+    flex-grow: 2;
+}
+#flexitem4{
+    background-color: rgb(247, 164, 247);
+} 
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 5px;
+    grid-auto-rows: 50px;
+}
+.item{
+    background-color: rgb(228, 147, 200);
+    border: 3px rgb(17, 16, 16) solid;
+    border-radius: 3px;
+    color: rgb(13, 50, 50);
+}
+#item1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
